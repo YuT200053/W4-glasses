@@ -1,4 +1,11 @@
 .product-nav {
+    .container {
+        @include pad() {
+            padding: 0;
+            max-width: 100%;
+        }
+    }
+
     li {
         width: 33.33%;
         border-left: 1px solid #dcdcdc;
@@ -16,6 +23,15 @@
         font-weight: 500;
         @include zoom(0.2s);
 
+        @include pad() {
+            font-size: $fsz-m;
+            padding: 16px 0 8px;
+        }
+
+        @include phone() {
+            font-size: $fsz-base;
+        }
+
         &:hover {
             border-bottom: 8px solid $dark-red;
         }
@@ -26,27 +42,5 @@
         font-weight: bold;
         pointer-events: none;
         cursor: default;
-    }
-}
-
-@media(max-width: 992px) {
-    .product-nav {
-        .container {
-            max-width: 100%;
-        }
-
-        a {
-            font-size: $fsz-m;
-            padding: 16px 0 8px;
-        }
-    }
-}
-
-@media(max-width: 767px) {
-    .product-nav {
-
-        a {
-            font-size: $fsz-base;
-        }
     }
 }

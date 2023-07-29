@@ -14,7 +14,9 @@
         width: 50%;
         background-size: cover;
         background-position: center center;
+    }
 
+    &-optical {
         &:nth-child(1) {
             background-image: url('../images/product-header-1.png');
 
@@ -28,6 +30,24 @@
 
             @include pad() {
                 background-image: url('../images/product-header-sm-2.png');
+            }
+        }
+    }
+
+    &-sunglasses {
+        &:nth-child(1) {
+            background-image: url('../images/product-header-3.png');
+
+            @include pad() {
+                background-image: url('../images/product-header-sm-3.png');
+            }
+        }
+
+        &:nth-child(2) {
+            background-image: url('../images/product-header-4.png');
+
+            @include pad() {
+                background-image: url('../images/product-header-sm-4.png');
             }
         }
     }
@@ -71,6 +91,14 @@
 
     &-card-4 {
         max-width: 25%;
+    }
+
+    &-card-3 {
+        max-width: 33.33%;
+    }
+
+    &-card-4,
+    &-card-3 {
         padding: 0 12px;
         margin-bottom: 80px;
 
@@ -137,7 +165,7 @@
     }
 
 
-
+    // /////page/////
     &-page {
         margin: 0 auto;
 
