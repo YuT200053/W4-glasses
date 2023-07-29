@@ -1,14 +1,14 @@
 // /////base/////
-@import './base/reset';
-@import './base/variable';
-@import './base/base';
+@import './base/reset.scss';
+@import './base/variable.scss';
+@import './base/base.scss';
 
 // /////helper/////
-@import './helpers/mixin';
-@import './helpers/helpers';
+@import './helpers/mixin.scss';
+@import './helpers/helpers.scss';
 
 // /////components/////
-@import './components/button';
+@import './components/button.scss';
 
 // /////header/////
 @import './layout/header.scss';
@@ -16,5 +16,5 @@
 @import './layout/product-nav.scss';
 
 // /////pages/////
-@import './pages/home';
-@import './pages/optical';
+@import './pages/home.scss';
+@import './pages/optical.scss';

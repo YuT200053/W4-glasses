@@ -43,7 +43,7 @@
 .home-bg-banner {
     width: 100%;
     height: 787px;
-    background-image: url('../img/home-header.png');
+    background-image: url('../assets/images/home-header.png');
     background-size: cover;
     padding: 296px 0;
     color: $dark-red;
@@ -63,7 +63,7 @@
 @media(max-width: 992px) {
     .home-bg-banner {
         height: 787px;
-        background-image: url('../img/home-header-sm.png');
+        background-image: url('../assets/images/home-header-sm.png');
         padding: 296px 36px;
     }
 }
@@ -204,7 +204,7 @@
 
 // /////collaboration/////
 .home-bg-collaboration {
-    background-image: url('../img/index-bg.png');
+    background-image: url('../assets/images/index-bg.png');
     background-size: cover;
 
     .home-h3 {
