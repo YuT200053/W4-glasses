@@ -17,12 +17,11 @@
         @include zoom(0.2s);
 
         &:hover {
-            font-weight: bold;
             border-bottom: 8px solid $dark-red;
         }
     }
 
-    .now {
+    .action {
         border-bottom: 8px solid $primary;
         font-weight: bold;
         pointer-events: none;

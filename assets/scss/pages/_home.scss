@@ -51,12 +51,12 @@
     @include pad() {
         height: 787px;
         background-image: url('../images/home-header-sm.png');
-        padding: 296px 36px;
+        padding: 296px 0;
     }
 
     @include phone() {
         height: 396px;
-        padding: 144px 14px;
+        padding: 144px 0;
     }
 
     p {
