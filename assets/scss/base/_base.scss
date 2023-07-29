@@ -1,0 +1,28 @@
+// /////font-family/////
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:ital,wght@0,500;1,400;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp');
+
+// /////全域設定/////
+body {
+    font-family: 'Noto Sans TC', 'Roboto', sans-serif;
+    line-height: $lh-l;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img {
+    display: inline-block;
+    font-size: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+hr {
+    background-color: $black;
+}

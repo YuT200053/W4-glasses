@@ -1,5 +1,20 @@
+// /////base/////
+@import './base/reset';
+@import './base/variable';
+@import './base/base';
+
+// /////helper/////
+@import './helpers/mixin';
+@import './helpers/helpers';
+
+// /////components/////
+@import './components/button';
+
+// /////header/////
 @import './layout/header.scss';
 @import './layout/footer.scss';
+@import './layout/product-nav.scss';
 
-
-@import './pages/index.scss';
+// /////pages/////
+@import './pages/home';
+@import './pages/optical';

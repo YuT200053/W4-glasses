@@ -1,0 +1,47 @@
+// /////container/////
+.container {
+    max-width: 1296px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
+@media(max-width:992px) {
+    .container {
+        padding: 0;
+    }
+}
+
+// /////padding/////
+.py-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+@media(max-width: 992px) {
+    .py-section {
+        padding: 80px 36px;
+    }
+}
+
+@media(max-width: 767px) {
+    .py-section {
+        padding: 40px 12px;
+    }
+}
+
+.px-24 {
+    padding: 0 24px;
+}
+
+// /////flexbox/////
+.d-flex {
+    display: flex;
+}
+
+.jc-sb {
+    justify-content: space-between;
+}
+
+.ai-c {
+    align-items: center;
+}

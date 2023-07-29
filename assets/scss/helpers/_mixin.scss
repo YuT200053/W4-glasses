@@ -1,0 +1,3 @@
+@mixin zoom($time) {
+    transition: ease-in-out $time;
+}

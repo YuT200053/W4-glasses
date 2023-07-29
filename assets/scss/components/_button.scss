@@ -1,0 +1,11 @@
+.btn-red {
+    padding: 6px 12px;
+    background-color: $primary;
+    color: $white;
+    font-size: $fsz-s;
+    @include zoom(0.2s);
+}
+
+.btn-red:hover {
+    background-color: $dark-red;
+}

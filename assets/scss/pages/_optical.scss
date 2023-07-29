@@ -1,0 +1,39 @@
+.product-banner {
+
+    ul {
+        width: 100%;
+        height: 296px;
+    }
+
+    li {
+        width: 50%;
+        background-size: cover;
+        background-position: center center;
+
+        &:nth-child(1) {
+            background-image: url('../img/product-header-1.png');
+        }
+
+        &:nth-child(2) {
+            background-image: url('../img/product-header-2.png');
+        }
+    }
+}
+
+@media (max-width:992px) {
+    .product-banner li {
+        &:nth-child(1) {
+            background-image: url('../img/product-header-sm-1.png');
+        }
+
+        &:nth-child(2) {
+            background-image: url('../img/product-header-sm-2.png');
+        }
+    }
+}
+
+@media (max-width:767px) {
+    .product-banner ul {
+        height: 136px;
+    }
+}
