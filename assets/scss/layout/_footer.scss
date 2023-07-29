@@ -3,6 +3,14 @@
     color: $white;
     padding: 48px 0 32px;
 
+    @include pad() {
+        padding: 48px 36px 40px;
+    }
+
+    @include phone() {
+        padding: 24px 20px;
+    }
+
     a {
         color: $white;
     }
@@ -11,6 +19,13 @@
         flex-direction: column;
         padding-bottom: 32px;
         border-bottom: 1px solid $white;
+
+        @include phone() {
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            padding-bottom: 20px;
+            align-items: start;
+        }
     }
 
     &-nav li {
@@ -18,6 +33,10 @@
         border-bottom: 3px solid $primary;
 
         @include zoom(0.2s);
+
+        @include phone() {
+            display: none;
+        }
 
         &:hover {
             border-bottom: 3px solid $white;
@@ -27,6 +46,15 @@
     &-social li {
         margin-left: 32px;
         max-width: 48px;
+
+        &:nth-child(1) {
+            margin-left: 0;
+        }
+
+        @include phone() {
+            margin-left: 8px;
+            max-width: 24px;
+        }
 
         img {
             max-width: 100%;
@@ -42,82 +70,47 @@
         font-size: $fsz-l;
         margin-top: 32px;
 
+        @include pad() {
+            margin-top: 24px;
+        }
+
+        @include phone() {
+            font-size: $fsz-base;
+            margin-top: 0;
+        }
+
         span {
             font-size: $fsz-l;
             margin-right: 22px;
+
+            @include phone() {
+                font-size: $fsz-xs;
+                margin-right: 11px;
+            }
         }
 
         li:nth-child(1) {
             margin-bottom: 8px;
+
+            @include phone() {
+                margin-bottom: 8px;
+            }
+        }
+
+        a {
+            @include zoom(0.2s);
+        }
+
+        a:hover {
+            color: $gray;
         }
     }
-
-
 }
 
 .copyright {
     padding-top: 32px;
 
-    li {
-        margin-left: 48px;
-        font-size: 0.875em;
-    }
-
-    a {
-        @include zoom(0.2s);
-    }
-
-    a:hover {
-        color: $gray;
-    }
-}
-
-@media(max-width: 992px) {
-    .footer {
-        padding: 48px 0 40px;
-
-        &-contact {
-            margin-top: 24px;
-        }
-    }
-}
-
-@media(max-width: 767px) {
-    .footer {
-        padding: 24px 20px;
-
-        &-box {
-            flex-direction: row-reverse;
-            justify-content: space-between;
-            padding-bottom: 20px;
-            align-items: start;
-        }
-
-        &-nav {
-            display: none;
-        }
-
-        &-social li {
-            margin-left: 8px;
-            max-width: 24px;
-        }
-    }
-
-    .footer-contact {
-        font-size: $fsz-base;
-        margin-top: 0;
-
-        span {
-            font-size: $fsz-xs;
-            margin-right: 11px;
-        }
-
-        li:nth-child(1) {
-            margin-bottom: 8px;
-        }
-    }
-
-    .copyright {
+    @include phone() {
         padding-top: 20px;
         flex-direction: column;
 
@@ -126,12 +119,25 @@
         }
     }
 
-    .copyright li {
-        margin-left: 0px;
-        font-size: $fsz-base;
+    li {
+        margin-left: 48px;
+        font-size: 0.875em;
 
-        &:nth-child(1) {
-            margin: 8px 0;
+        @include phone() {
+            margin-left: 0px;
+            font-size: $fsz-base;
+
+            &:nth-child(1) {
+                margin: 8px 0;
+            }
         }
+    }
+
+    a {
+        @include zoom(0.2s);
+    }
+
+    a:hover {
+        color: $gray;
     }
 }
