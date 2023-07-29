@@ -15,18 +15,18 @@
         background-position: center center;
 
         &:nth-child(1) {
-            background-image: url('../assets/images/product-header-1.png');
+            background-image: url('./assets/images/product-header-1.png');
 
             @include pad() {
-                background-image: url('../assets/images/product-header-sm-1.png');
+                background-image: url('./assets/images/product-header-sm-1.png');
             }
         }
 
         &:nth-child(2) {
-            background-image: url('../assets/images/product-header-2.png');
+            background-image: url('./assets/images/product-header-2.png');
 
             @include pad() {
-                background-image: url('../assets/images/product-header-sm-2.png');
+                background-image: url('./assets/images/product-header-sm-2.png');
             }
         }
     }
