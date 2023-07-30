@@ -146,7 +146,34 @@
     <footer class="footer"><%- include('./layout/footer'); -%></footer>
     <!-- /////don't move///// -->
     <script type="module" src="../main.js"></script>
-    <script type="module" src="/assets/js/jquery-3.7.0.min.js"></script>
-    <script type="module" src="/assets/js/all.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#location-area").change(function () {
+          switch ($(this).val()) {
+            case "0":
+              $(".taipei").show();
+              $(".taichung").show();
+              $(".kaohsiung").show();
+              break;
+            case "1":
+              $(".taipei").show();
+              $(".taichung").hide();
+              $(".kaohsiung").hide();
+              break;
+            case "2":
+              $(".taipei").hide();
+              $(".taichung").show();
+              $(".kaohsiung").hide();
+              break;
+            case "3":
+              $(".taipei").hide();
+              $(".taichung").hide();
+              $(".kaohsiung").show();
+              break;
+          }
+        });
+      });
+    </script>
   </body>
 </html>
