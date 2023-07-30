@@ -89,26 +89,16 @@
         font-size: 0;
     }
 
-    &-card-4 {
-        max-width: 25%;
-    }
-
-    &-card-3 {
-        max-width: 33.33%;
-    }
-
-    &-card-4,
-    &-card-3 {
+    .card-4,
+    .card-3 {
         padding: 0 12px;
         margin-bottom: 80px;
 
         @include pad() {
-            max-width: 50%;
             margin-bottom: 40px;
         }
 
         @include phone() {
-            max-width: 100%;
             margin: 0 auto 24px;
 
             &:nth-child(12) {

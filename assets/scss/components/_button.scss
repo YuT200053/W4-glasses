@@ -4,8 +4,21 @@
     color: $white;
     font-size: $fsz-s;
     @include zoom(0.2s);
+
+    &:hover {
+        background-color: $dark-red;
+    }
 }
 
-.btn-red:hover {
-    background-color: $dark-red;
+.btn-black {
+    padding: 16px 0;
+    background-color: $black;
+    color: $white;
+    font-size: $fsz-xs;
+    text-align: center;
+    @include zoom(0.2s);
+
+    .card-3:hover & {
+        background-color: $primary;
+    }
 }

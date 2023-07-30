@@ -18,12 +18,9 @@
     padding-top: 80px;
     padding-bottom: 80px;
 
-    @include pad() {
-        padding: 80px 0px;
-    }
-
     @include phone() {
-        padding: 40px 0px;
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
 }
 
@@ -47,4 +44,33 @@
 
 .ai-c {
     align-items: center;
+}
+
+.ai-s {
+    align-items: start;
+}
+
+// /////card/////
+.card-4 {
+    max-width: 25%;
+
+    @include pad() {
+        max-width: 50%;
+    }
+
+    @include phone() {
+        max-width: 100%;
+    }
+}
+
+.card-3 {
+    max-width: 33.33%;
+
+    @include pad() {
+        max-width: 50%;
+    }
+
+    @include phone() {
+        max-width: 100%;
+    }
 }

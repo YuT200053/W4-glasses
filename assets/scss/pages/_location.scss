@@ -1,0 +1,104 @@
+.location {
+    h2 {
+        font-size: $other-title;
+        font-weight: bold;
+        border-left: 8px solid $dark-red;
+        padding-left: 16px;
+        margin: 16px 0 32px;
+
+        @include pad() {
+            margin: 0 0 32px;
+        }
+
+        @include phone() {
+            font-size: $fsz-m;
+            margin: 0 0 24px;
+        }
+    }
+
+    label {
+        font-size: $fsz-m;
+        margin-right: 16px;
+
+        @include phone() {
+            font-size: $fsz-base;
+            margin-right: 8px;
+        }
+    }
+
+    &-area {
+        margin-bottom: 40px;
+
+        @include phone() {
+            margin-bottom: 24px;
+        }
+
+        select {
+            width: 304px;
+            padding: 6px 12px;
+            border: 1px solid #CED4DA;
+            font-size: $fsz-xs;
+            color: #495057;
+            appearance: none;
+            background: url("/assets/images/drop-down.png") 100% / 24px no-repeat;
+
+            @include phone {
+                flex-grow: 1;
+            }
+        }
+    }
+
+    &-box {
+        flex-wrap: wrap;
+        margin: 0 -12px;
+
+        .card-3 {
+            padding: 0 12px;
+            margin-bottom: 48px;
+
+            @include pad() {
+                margin-bottom: 24px;
+            }
+        }
+
+        a {
+            color: $black;
+
+            &:hover img {
+                transform: scale(1.1);
+            }
+        }
+
+        h3 {
+            font-size: $fsz-m;
+            padding: 8px 24px;
+            border-left: 1px solid #CED4DA;
+            border-right: 1px solid #CED4DA;
+        }
+    }
+
+    &-img {
+        font-size: 0;
+        overflow: hidden;
+
+        img {
+            @include zoom(0.5s);
+        }
+    }
+
+    &-info {
+        padding: 16px 24px;
+        font-size: $fsz-s;
+        border: 1px solid #CED4DA;
+
+        span {
+            margin-right: 10px;
+            font-size: $fsz-s;
+            line-height: $lh-l;
+        }
+
+        div:nth-child(2) {
+            margin: 8px 0;
+        }
+    }
+}

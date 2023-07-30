@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>W3眼鏡官網│門市據點</title>
+  </head>
+  <body>
+    <!-- /////header///// -->
+    <header><%- include('./layout/header'); -%></header>
+    <!-- /////main///// -->
+    <main>
+      <!-- /////position///// -->
+      <div class="container py-section location">
+        <h2>門市據點</h2>
+        <div class="location-area d-flex ai-c">
+          <label for="location-area">選擇地區</label>
+          <select name="location-area" id="location-area">
+            <option value="台北市">台北市</option>
+            <option value="台中市">台中市</option>
+            <option value="高雄市">高雄市</option>
+          </select>
+        </div>
+        <!-- /////shop///// -->
+        <ul class="location-box d-flex">
+          <li class="card-3">
+            <a href="#">
+              <div class="location-img">
+                <img src="../assets/images/store-1.png" alt="台北中山旗艦店" />
+              </div>
+              <h3>台北中山旗艦店</h3>
+              <div class="location-info">
+                <div class="d-flex">
+                  <span class="material-icons-outlined"> call </span
+                  >電話：(02)000-1234
+                </div>
+                <div class="d-flex">
+                  <span class="material-icons-outlined"> schedule </span
+                  >營業時間：10:00-21:00
+                </div>
+                <div class="d-flex ai-s">
+                  <span class="material-icons-outlined"> place </span
+                  >地址：台北市中山區南京東路25巷2-1號
+                </div>
+              </div>
+              <div class="btn-black">詳細資訊</div>
+            </a>
+          </li>
+          <li class="card-3">
+            <a href="#">
+              <div class="location-img">
+                <img src="../assets/images/store-2.png" alt="台北綠園店" />
+              </div>
+              <h3>台北綠園店</h3>
+              <div class="location-info">
+                <div class="d-flex">
+                  <span class="material-icons-outlined"> call </span
+                  >電話：(02)000-2345
+                </div>
+                <div class="d-flex">
+                  <span class="material-icons-outlined"> schedule </span
+                  >營業時間：10:00-21:00
+                </div>
+                <div class="d-flex ai-s">
+                  <span class="material-icons-outlined"> place </span
+                  >地址：台北市中正區復興南路 132-1 號
+                </div>
+              </div>
+              <div class="btn-black">詳細資訊</div>
+            </a>
+          </li>
+          <li class="card-3">
+            <a href="#">
+              <div class="location-img">
+                <img src="../assets/images/store-3.png" alt="台中清水旗艦店" />
+              </div>
+              <h3>台中清水旗艦店</h3>
+              <div class="location-info">
+                <div class="d-flex">
+                  <span class="material-icons-outlined"> call </span
+                  >電話：(02)000-1234
+                </div>
+                <div class="d-flex">
+                  <span class="material-icons-outlined"> schedule </span
+                  >營業時間：10:00-21:00
+                </div>
+                <div class="d-flex ai-s">
+                  <span class="material-icons-outlined"> place </span
+                  >地址：台中市清水區經南一路 23 號 8 樓
+                </div>
+              </div>
+              <div class="btn-black">詳細資訊</div>
+            </a>
+          </li>
+          <li class="card-3">
+            <a href="#">
+              <div class="location-img">
+                <img src="../assets/images/store-4.png" alt="高雄中正形象店" />
+              </div>
+              <h3>高雄中正形象店</h3>
+              <div class="location-info">
+                <div class="d-flex">
+                  <span class="material-icons-outlined"> call </span
+                  >電話：(07)000-2345
+                </div>
+                <div class="d-flex">
+                  <span class="material-icons-outlined"> schedule </span
+                  >營業時間：10:00-21:00
+                </div>
+                <div class="d-flex ai-s">
+                  <span class="material-icons-outlined"> place </span
+                  >地址：高雄市苓雅區中正路 38 號 12 樓
+                </div>
+              </div>
+              <div class="btn-black">詳細資訊</div>
+            </a>
+          </li>
+          <li class="card-3">
+            <a href="#">
+              <div class="location-img">
+                <img src="../assets/images/store-5.png" alt="高雄夢時代店" />
+              </div>
+              <h3>高雄夢時代店</h3>
+              <div class="location-info">
+                <div class="d-flex">
+                  <span class="material-icons-outlined"> call </span
+                  >電話：(07)000-1234
+                </div>
+                <div class="d-flex">
+                  <span class="material-icons-outlined"> schedule </span
+                  >營業時間：10:00-21:00
+                </div>
+                <div class="d-flex ai-s">
+                  <span class="material-icons-outlined"> place </span
+                  >地址：高雄市前鎮區中華一路 63 號 6 樓
+                </div>
+              </div>
+              <div class="btn-black">詳細資訊</div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <!-- /////footer///// -->
+    <footer class="footer"><%- include('./layout/footer'); -%></footer>
+    <!-- /////don't move///// -->
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
