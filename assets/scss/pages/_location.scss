@@ -23,14 +23,17 @@
         @include phone() {
             font-size: $fsz-base;
             margin-right: 8px;
+            min-width: 72px;
         }
     }
 
     &-area {
+        max-width: 416px;
         margin-bottom: 40px;
 
         @include phone() {
             margin-bottom: 24px;
+            max-width: 100%;
         }
 
         select {
@@ -42,9 +45,9 @@
             appearance: none;
             background: url("/assets/images/drop-down.png") 100% / 24px no-repeat;
 
-            // @include phone {
-            //     flex-grow: 1;
-            // }
+            @include phone {
+                flex-grow: 1;
+            }
         }
     }
 
@@ -129,6 +132,8 @@
         }
 
         &-text {
+
+
             @include pad() {
                 width: 50%;
             }
