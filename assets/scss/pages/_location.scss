@@ -42,9 +42,9 @@
             appearance: none;
             background: url("/assets/images/drop-down.png") 100% / 24px no-repeat;
 
-            @include phone {
-                flex-grow: 1;
-            }
+            // @include phone {
+            //     flex-grow: 1;
+            // }
         }
     }
 
@@ -60,21 +60,23 @@
                 margin-bottom: 24px;
             }
         }
+    }
 
-        a {
-            color: $black;
+    a {
+        color: $black;
+        height: 100%;
 
-            &:hover img {
-                transform: scale(1.1);
-            }
+        &:hover img {
+            transform: scale(1.1);
         }
+    }
 
-        h3 {
-            font-size: $fsz-m;
-            padding: 8px 24px;
-            border-left: 1px solid #CED4DA;
-            border-right: 1px solid #CED4DA;
-        }
+    h3 {
+        font-size: $fsz-m;
+        padding: 8px 24px;
+        border-left: 1px solid #CED4DA;
+        border-right: 1px solid #CED4DA;
+        border-top: 1px solid #CED4DA;
     }
 
     &-img {
@@ -90,6 +92,7 @@
         padding: 16px 24px;
         font-size: $fsz-s;
         border: 1px solid #CED4DA;
+        flex-grow: 1;
 
         span {
             margin-right: 10px;
@@ -99,6 +102,71 @@
 
         div:nth-child(2) {
             margin: 8px 0;
+        }
+    }
+
+    .store {
+        &-box {
+            @include pad {
+                flex-direction: column;
+            }
+        }
+
+        &-card {
+            width: 40%;
+            margin-right: 24px;
+            flex-direction: column;
+
+            @include pad() {
+                width: 100%;
+                flex-direction: row;
+                margin-bottom: 24px;
+            }
+
+            @include phone() {
+                flex-direction: column;
+            }
+        }
+
+        &-text {
+            @include pad() {
+                width: 50%;
+            }
+
+            @include phone() {
+                width: 100%;
+            }
+        }
+
+        &-img {
+            height: 224px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            @include pad() {
+                width: 50%;
+                margin-right: 24px;
+            }
+
+            @include phone() {
+                width: 100%;
+            }
+        }
+    }
+
+
+
+    iframe {
+        width: 60%;
+        height: auto;
+
+        @include pad() {
+            width: 100%;
+            height: 414px;
         }
     }
 }
