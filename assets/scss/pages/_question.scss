@@ -1,0 +1,23 @@
+.question {
+    &-subtitle {
+        font-size: $fsz-m;
+        font-weight: bold;
+        margin-bottom: 24px;
+    }
+
+    &-box {
+        li {
+            margin-bottom: 32px;
+
+            &:nth-child(5) {
+                margin-bottom: 0;
+            }
+        }
+
+        h3 {
+            font-size: $fsz-s;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+    }
+}

@@ -78,3 +78,21 @@
         max-width: 100%;
     }
 }
+
+// /////title/////
+.other-title {
+    font-size: $other-title;
+    font-weight: bold;
+    border-left: 8px solid $dark-red;
+    padding-left: 16px;
+    margin: 16px 0 32px;
+
+    @include pad() {
+        margin: 0 0 32px;
+    }
+
+    @include phone() {
+        font-size: $fsz-m;
+        margin: 0 0 24px;
+    }
+}
