@@ -47,9 +47,14 @@ header {
         }
 
         a {
+            font-size: $fsz-s;
             color: $white;
             @include zoom(0.2s);
             border-bottom: 3px $primary solid;
+
+            @include phone() {
+                font-size: $fsz-base;
+            }
         }
 
         a:hover {

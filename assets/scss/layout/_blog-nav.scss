@@ -1,0 +1,26 @@
+.blog-nav {
+    background-color: $dark-red;
+    padding: 13px 0;
+
+    @include phone() {
+        display: none;
+    }
+
+    a {
+        color: $white;
+        font-size: $fsz-s;
+        font-weight: bold;
+    }
+
+    span {
+        font-size: 30px;
+    }
+
+    ul {
+        margin: 0 -24px 0 0;
+    }
+
+    li {
+        margin: 0 24px;
+    }
+}
