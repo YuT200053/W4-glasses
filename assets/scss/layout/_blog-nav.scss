@@ -2,25 +2,49 @@
     background-color: $dark-red;
     padding: 13px 0;
 
-    @include phone() {
-        display: none;
+    .container {
+        @include phone() {
+            padding: 0;
+        }
     }
 
     a {
         color: $white;
         font-size: $fsz-s;
         font-weight: bold;
+        border-bottom: 3px solid $dark-red;
+        @include zoom(0.2s);
+
+        &:hover {
+            border-bottom: 3px solid $white;
+        }
+
+        @include phone() {
+            font-size: $fsz-base;
+        }
     }
 
     span {
         font-size: 30px;
+
+        @include phone() {
+            display: none;
+        }
     }
 
-    ul {
-        margin: 0 -24px 0 0;
+    &-box {
+        margin: 0 -24px;
+
+        @include phone() {
+            margin: 0 auto;
+        }
     }
 
     li {
         margin: 0 24px;
+
+        @include phone() {
+            margin: 0 12px;
+        }
     }
 }

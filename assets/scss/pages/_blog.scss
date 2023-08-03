@@ -5,6 +5,12 @@
         }
     }
 
+    &-page-nav {
+        @include phone() {
+            display: none;
+        }
+    }
+
     &-box {
         margin: -30px 0 124px;
 

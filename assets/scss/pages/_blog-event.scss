@@ -1,0 +1,69 @@
+.blog-event {
+    li {
+        display: inline-block;
+    }
+
+    .breadcrumbs {
+        margin-top: 24px;
+
+        a {
+            color: $black;
+            @include zoom(0.2s);
+
+            &:hover {
+                color: $dark-gray;
+            }
+        }
+
+        &-now {
+            color: $primary;
+        }
+    }
+
+    &-tags {
+        margin: 8px 0;
+
+        a {
+            font-family: $english;
+            font-weight: bold;
+            color: $primary;
+            font-size: $fsz-m;
+        }
+
+        li {
+            margin-right: 15px;
+        }
+    }
+
+    &-content {
+        max-width: 66.66%;
+        margin-right: 24px;
+    }
+
+    &-all-tages {
+        max-width: 33.33%;
+    }
+
+    &-title {
+        font-size: $other-title;
+    }
+
+    &-sub-title {
+        font-family: $english;
+        font-weight: 500;
+        font-size: $fsz-m;
+        margin-bottom: 16px;
+    }
+
+    .tags-title {
+        color: $primary;
+        font-family: $english;
+        font-weight: bold;
+        font-size: $fsz-l;
+
+        span {
+            font-size: $product-title;
+            margin-right: 8px;
+        }
+    }
+}

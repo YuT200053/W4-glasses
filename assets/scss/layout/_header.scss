@@ -4,6 +4,10 @@ header {
 
     @include pad() {
         padding: 16px 36px;
+
+        .container {
+            padding: 0;
+        }
     }
 
     @include phone() {
