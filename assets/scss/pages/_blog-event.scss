@@ -23,25 +23,95 @@
     &-tags {
         margin: 8px 0;
 
-        a {
-            font-family: $english;
-            font-weight: bold;
-            color: $primary;
-            font-size: $fsz-m;
-        }
-
         li {
             margin-right: 15px;
+        }
+    }
+
+    .tags {
+        font-family: $english;
+        font-weight: bold;
+        color: $primary;
+        font-size: $fsz-m;
+        @include zoom(0.2s);
+
+        &:hover {
+            color: $dark-red;
+        }
+
+        &-box {
+            flex-wrap: wrap;
+
+            a {
+                margin-right: 24px;
+                margin-bottom: 4px;
+            }
+        }
+
+        &-title {
+            margin-bottom: 4px;
         }
     }
 
     &-content {
         max-width: 66.66%;
         margin-right: 24px;
+
+        @include phone() {
+            max-width: 100%;
+            margin: 0;
+        }
+
+        p {
+            color: #555;
+        }
+
+        li:nth-child(4) {
+            @include pad() {
+                margin-bottom: 40px;
+            }
+
+            @include phone() {
+                margin-bottom: 64px;
+            }
+        }
     }
 
-    &-all-tages {
-        max-width: 33.33%;
+    &-content li {
+        margin-bottom: 40px;
+
+        @include pad() {
+            margin-bottom: 24px;
+        }
+
+        @include phone() {
+            margin-bottom: 16px;
+        }
+
+        img {
+            display: block;
+            margin-bottom: 8px;
+
+            @include pad() {
+                margin-bottom: 16px;
+            }
+
+            @include phone() {
+                margin-bottom: 8px;
+            }
+        }
+    }
+
+    &-all-tags {
+        max-width: 22%;
+
+        @include pad() {
+            max-width: 33.33%;
+        }
+
+        @include phone() {
+            display: none;
+        }
     }
 
     &-title {
@@ -53,6 +123,14 @@
         font-weight: 500;
         font-size: $fsz-m;
         margin-bottom: 16px;
+
+        @include pad() {
+            margin-bottom: 24px;
+        }
+
+        @include phone() {
+            margin-bottom: 16px;
+        }
     }
 
     .tags-title {
@@ -64,6 +142,58 @@
         span {
             font-size: $product-title;
             margin-right: 8px;
+        }
+    }
+
+    &-share {
+        width: 100%;
+        border-bottom: 1px solid $dark-gray;
+        padding-bottom: 16px;
+        margin-bottom: 24px;
+
+        @include phone() {
+            display: none;
+        }
+
+        span {
+            font-family: $english;
+            font-weight: bold;
+        }
+
+        img {
+            max-width: 24px;
+            margin-left: 24px;
+            @include zoom(0.2s);
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        a {
+            display: block;
+            font-size: 0;
+        }
+    }
+
+    &-other {
+        margin: 0 -6px 80px;
+
+        @include phone() {
+            display: none;
+        }
+
+        a {
+            color: $black;
+            @include zoom(0.2s);
+
+            &:hover {
+                color: $dark-gray;
+            }
+
+            span {
+                margin: 0 6px;
+            }
         }
     }
 }
